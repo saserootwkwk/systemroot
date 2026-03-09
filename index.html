@@ -6,33 +6,40 @@
 <title>TikTok Feed</title>
 
 <style>
+
 body{
-    margin:0;
-    background:#000;
-    font-family:sans-serif;
+margin:0;
+background:black;
+font-family:sans-serif;
+overflow:hidden;
 }
 
 .feed{
-    height:100vh;
-    width:100%;
-    overflow-y:scroll;
-    scroll-snap-type:y mandatory;
+height:100vh;
+overflow-y:scroll;
+scroll-snap-type:y mandatory;
+scroll-behavior:smooth;
 }
 
 .video{
-    height:100vh;
-    width:100%;
-    scroll-snap-align:start;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+scroll-snap-align:start;
 }
 
-.video iframe{
-    width:100%;
-    height:100%;
-    border:none;
+.tiktok-embed{
+max-width:100%;
+height:100%;
 }
+
+iframe{
+width:100%;
+height:100%;
+border:none;
+}
+
 </style>
 </head>
 
@@ -41,42 +48,56 @@ body{
 <div class="feed">
 
 <div class="video">
-<iframe src="https://www.tiktok.com/embed/7047910058948152603"></iframe>
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@video/video/7047910058948152603">
+<section></section>
+</blockquote>
 </div>
 
 <div class="video">
-<iframe src="https://www.tiktok.com/embed/7269112023605169410"></iframe>
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@video/video/7269112023605169410">
+<section></section>
+</blockquote>
 </div>
 
 <div class="video">
-<iframe src="https://www.tiktok.com/embed/7266978341717052678"></iframe>
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@video/video/7266978341717052678">
+<section></section>
+</blockquote>
 </div>
 
 <div class="video">
-<iframe src="https://www.tiktok.com/embed/7294272562442341637"></iframe>
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@video/video/7294272562442341637">
+<section></section>
+</blockquote>
 </div>
 
 <div class="video">
-<iframe src="https://www.tiktok.com/embed/7233793240695147818"></iframe>
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@video/video/7233793240695147818">
+<section></section>
+</blockquote>
 </div>
 
 <div class="video">
-<iframe src="https://www.tiktok.com/embed/7200420797012364587"></iframe>
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@video/video/7200420797012364587">
+<section></section>
+</blockquote>
 </div>
 
 <div class="video">
-<iframe src="https://www.tiktok.com/embed/7242033047116401966"></iframe>
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@video/video/7242033047116401966">
+<section></section>
+</blockquote>
 </div>
 
 <div class="video">
-<iframe src="https://www.tiktok.com/embed/7522275388135902520"></iframe>
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@video/video/7522275388135902520">
+<section></section>
+</blockquote>
 </div>
 
 </div>
+
+<script async src="https://www.tiktok.com/embed.js"></script>
 
 </body>
 </html>
-
-
-
-
